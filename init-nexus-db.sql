@@ -1,0 +1,5 @@
+\c ${POSTGRES_DB};
+
+CREATE SCHEMA nexus;
+
+CREATE EXTENSION IF NOT EXISTS pg_trgm SCHEMA nexus;

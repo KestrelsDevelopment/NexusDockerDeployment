@@ -23,6 +23,7 @@ services:
       - 127.0.0.1:${POSTGRES_PORT}:${POSTGRES_PORT}
     volumes:
       - postgres-data:/var/lib/postgresql/data
+      - ./init-nexus-db.sql:/docker-entrypoint-initdb.d/init-nexus-db.sql
     networks:
       nexus:
 
