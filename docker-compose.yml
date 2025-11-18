@@ -32,4 +32,10 @@ networks:
 
 volumes:
   nexus-data:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind,size=55g
+      device: /path/to/your/files
+      
   postgres-data:
